@@ -1,5 +1,5 @@
 //npm install ibm-watson
-import NaturalLanguageUnderstandingV1 from "ibm-watson/natural-language-understanding/v1";
+import * as NaturalLanguageUnderstandingV1 from "ibm-watson/natural-language-understanding/v1";
 import { ConfigWatson } from "./watson.contants";
 
 export class WatsonNaturalLanguageAdapter {
