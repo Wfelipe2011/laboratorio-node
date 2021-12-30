@@ -1,10 +1,10 @@
-# Modulo Watson Natural Language 
+# Módulo Watson Natural Language 
 
 ## Descrição
 
 [Watson Keywords](https://github.com/watson-developer-cloud/natural-language-understanding-nodejs)
 
-- Um modulo que utiliza api watson para selecionar as palavras chaves de um texto.
+- Um módulo que utiliza api watson para selecionar as palavras chaves de um texto.
 
 ## Instalação
 
@@ -23,7 +23,7 @@ const result = await WatsonNaturalLanguageAdapter.analyze("pastel de frango");
 console.log(result);
 ```
 
-- Buscando por um idioma especifico
+- Buscando por um idioma específico
 
 ```ts
 const result = await WatsonNaturalLanguageAdapter.analyze(
@@ -34,8 +34,9 @@ const result = await WatsonNaturalLanguageAdapter.analyze(
 
 ### Definindo as credenciais
 
-- É preciso se cadastrar na IBM Clound para utilizar o modulo, eles irão fornecer um arquivo de configuração que conterá "apikey" e "url"
-  - Depois é só criar um arquivo .env e colocar suas credenciais nele(Apenas o texto):
+- É preciso se cadastrar na IBM Cloud para utilizar o módulo, eles irão fornecer um arquivo de configuração que conterá "apikey" e "url"
+ - Depois é só criar um arquivo .env e colocar suas credenciais nele(Apenas o texto):
+
 
 ```bash
   API_KEY=Coloque o conteúdo da "apikey" sem as ("")
@@ -52,7 +53,7 @@ export const ConfigWatson: IConfigWatson = {
 };
 ```
 
-- Em alguns caso é preciso instalar o [dotenv](https://www.npmjs.com/package/dotenv) para você ter acesso as variáveis de ambiente
+- Em alguns caso é preciso instalar o [dotenv](https://www.npmjs.com/package/dotenv) para você ter acesso as variáveis de ambiente.
 
 ```bash
   npm i dotenv
