@@ -6,7 +6,7 @@ import { MongoDBConect } from "./module/MondoDBAdapter/infra";
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  await MongoDBConect.startMongo();
+
   await app.listen(3000);
 }
 bootstrap();
